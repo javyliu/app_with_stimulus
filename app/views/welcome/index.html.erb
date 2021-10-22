@@ -1,4 +1,4 @@
-<div data-controller="hello" data-hello-supported-class="copy" class="div" data-hello-index-value = 1>
+<div data-controller="hello" data-hello-supported-class="copy hello name me" class="div" data-hello-index-value = 1>
   <h1>Welcome#index</h1>
   <p>Find me in app/views/welcome/index.html.erb</p>
    <input data-hello-target="output" type="text">
@@ -16,7 +16,7 @@
 
 
 
-<div data-controller="hello" data-hello-supported-class="copy" class="div" data-hello-index-value = 2>
+<div data-controller="hello" data-hello-supported-class="copy hello user" class="div" data-hello-index-value = 2>
   <h1>Welcome#index</h1>
   <p>Find me in app/views/welcome/index.html.erb</p>
    <input data-hello-target="output" type="text">
@@ -47,3 +47,15 @@
   <div data-hello-target="slide">3🙉</div>
   <div data-hello-target="slide">4🙊</div>
 </div>
+
+<div data-controller="hello effects" data-hello-supported-class="copy"  data-action="hello:to->effects#flash">
+  PIN: <input data-hello-target="output" type="text" value="1234" readonly>
+  <button data-action="hello#to">redirect to method</button>
+</div>
+
+<h1>window resize</h1>
+<div data-controller="effects"  data-action="resize@window->effects#resize">
+  PIN: <input data-hello-target="output" type="text" value="1234" readonly>
+  <button data-action="effects#flash">redirect to method</button>
+</div>
+

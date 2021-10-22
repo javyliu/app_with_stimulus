@@ -55,4 +55,6 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem "stimulus-rails", "~> 0.7.1"
+#gem "stimulus-rails", "~> 0.7.1"
+#添加了一个补丁
+gem "stimulus-rails", github: 'javyliu/stimulus-rails', branch: 'patch-1'

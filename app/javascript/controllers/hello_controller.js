@@ -24,11 +24,15 @@ export default class extends Controller {
 
   }
 
-  previous() {
-    this.indexValue --;
+  previous = ()=> {
+    this.indexValue == 0 ? 0 :  this.indexValue --;
   }
+
+  //previous() {
+  //  this.indexValue == 0 ? 0 :  this.indexValue --;
+  //}
   next() {
-    this.indexValue ++;
+    this.indexValue == (this.slideTargets.length-1) ? 0 : this.indexValue ++;
   }
 
   indexValueChanged(){
@@ -51,4 +55,10 @@ export default class extends Controller {
     this.outputTarget.select();
     document.execCommand('copy');
   }
+
+
+  to() {
+    this.dispatch("to", {detail: {content: this.outputTarget.value}});
+  }
+
 }

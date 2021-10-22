@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/javyliu/stimulus-rails.git
+  revision: a6a1c398563976cded031c637e6106258b0511d4
+  branch: patch-1
+  specs:
+    stimulus-rails (0.7.1)
+      rails (>= 6.0.0)
+
 GEM
   remote: https://gems.ruby-china.com/
   specs:
@@ -168,8 +176,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    stimulus-rails (0.7.1)
-      rails (>= 6.0.0)
     thor (1.1.0)
     tilt (2.0.10)
     turbolinks (5.2.1)
@@ -213,7 +219,7 @@ DEPENDENCIES
   sass-rails (>= 6)
   selenium-webdriver
   spring
-  stimulus-rails (~> 0.7.1)
+  stimulus-rails!
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 4.1.0)

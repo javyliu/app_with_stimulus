@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+# Author: javy liu
+#Date & Time: 2021-10-22 11:57:49
+#Description: when use rails stimulus:manifest:update to generate index.js map file,it included the vim tmp file like *.swp or *.swp,use this script to fix it
+sed -ri '/sw[op]\"$/,+2d' app/javascript/controllers/index.js
