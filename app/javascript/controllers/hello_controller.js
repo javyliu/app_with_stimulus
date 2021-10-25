@@ -15,11 +15,10 @@ export default class extends Controller {
 
   connect() {
     this.outputTarget.value = 'Hello, Stimulus!'
-    console.log(this.outputTarget);
-    console.log("connect to the hello controller ");
+    //console.log(this.outputTarget);
+    //console.log("connect to the hello controller ");
     if (document.queryCommandSupported('copy')) {
       this.element.classList.add(this.supportedClass)
-      //console.log(this.copyClass);
     }
 
   }
@@ -31,6 +30,7 @@ export default class extends Controller {
   //previous() {
   //  this.indexValue == 0 ? 0 :  this.indexValue --;
   //}
+
   next() {
     this.indexValue == (this.slideTargets.length-1) ? 0 : this.indexValue ++;
   }
