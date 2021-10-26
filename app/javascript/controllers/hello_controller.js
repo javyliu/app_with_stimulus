@@ -12,11 +12,14 @@ export default class extends Controller {
   //  console.log(typeof this.indexValue);
   //}
 
+  initialize(){
+    console.log("reload!")
+  }
 
   connect() {
     this.outputTarget.value = 'Hello, Stimulus!'
     //console.log(this.outputTarget);
-    //console.log("connect to the hello controller ");
+    console.log("connect to the hello controller ");
     if (document.queryCommandSupported('copy')) {
       this.element.classList.add(this.supportedClass)
     }

@@ -61,8 +61,8 @@
   <button type="button" data-action="hello#greet">greet</button>
   <button type="button" data-action="hello#copy" class='copy'>copy</button>
 
-  <button data-action="hello#previous"> ← </button>
-  <button data-action="hello#next"> → </button>
+  <button data-action="hello#previous" class="button primary"> ← </button>
+  <button data-action="hello#next" class="button success"> → </button>
 
   <div data-hello-target="slide">1🐵</div>
   <div data-hello-target="slide">2🙈</div>
@@ -72,12 +72,12 @@
 
 <div data-controller="hello effects" data-hello-supported-class="copy"  data-action="hello:to->effects#flash">
   PIN: <input data-hello-target="output" type="text" value="1234" readonly>
-  <button data-action="hello#to">redirect to method</button>
+  <button data-action="hello#to" class="button success">redirect to method</button>
 </div>
 
 <h1>window resize</h1>
 <div data-controller="effects"  data-action="resize@window->effects#resize">
-  PIN: <input data-hello-target="output" type="text" value="1234" readonly>
-  <button data-action="effects#flash">redirect to method</button>
+  PIN: <input data-hello-target="output" type="text" value="1434h" readonly>
+  <button data-action="effects#flash" class="button success">redirect</button>
 </div>
 
