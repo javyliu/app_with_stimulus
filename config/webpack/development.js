@@ -2,8 +2,8 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'development'
 
 const environment = require('./environment')
 
-//const chokidar = require('chokidar')
-const path = require('path')
+const chokidar = require('chokidar')
+//const path = require('path')
 
 //environment.config.devServer.before = (app, server) => {
 //  //chokidar.watch('.', {ignored: /(^|[\/\\])\../}).on('all', (event, path) => {
@@ -18,12 +18,12 @@ const path = require('path')
 //
 //}
 
-environment.config.devServer.watchContentBase = true
-environment.config.devServer.contentBase = [
-  path.join(__dirname, '../../app/**/*.erb'),
-  path.join(__dirname, '../../app/**/*.rb'),
-  path.join(__dirname, '../../app/**/*.scss')
-]
+//environment.config.devServer.watchContentBase = true
+//environment.config.devServer.contentBase = [
+//  path.join(__dirname, '../../app/**/*.erb'),
+//  path.join(__dirname, '../../app/**/*.rb'),
+//  path.join(__dirname, '../../app/**/*.scss')
+//]
 
 //environment.config.devServer.watchFiles = {
 //  paths: [

@@ -5,21 +5,19 @@ export default class extends Controller {
   static classes = [ 'supported' ]
   static values = {index: Number}
 
-  //initialize(){
+  initialize(){
   //  this.index = 0;
   //  this.showCurrentSlide();
   //  console.log(this.indexValue);
   //  console.log(typeof this.indexValue);
-  //}
-
-  initialize(){
-    console.log("reload!")
+    //console.log("initialize");
   }
+
 
   connect() {
     this.outputTarget.value = 'Hello, Stimulus!'
     //console.log(this.outputTarget);
-    console.log("connect to the hello controller ");
+    //console.log("connect to the hello controller ");
     if (document.queryCommandSupported('copy')) {
       this.element.classList.add(this.supportedClass)
     }

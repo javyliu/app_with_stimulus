@@ -1,7 +1,7 @@
 source 'https://gems.ruby-china.com'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.0.2'
+ruby '3.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
@@ -55,6 +55,6 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-#gem "stimulus-rails", "~> 0.7.1"
+gem "stimulus-rails", "~> 0.7.1"
 #添加了一个补丁
-gem "stimulus-rails", github: 'javyliu/stimulus-rails', branch: 'patch-1'
+#gem "stimulus-rails", github: 'javyliu/stimulus-rails', branch: 'patch-1'
