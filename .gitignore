@@ -39,3 +39,7 @@ tmp/
 log/
 vendor/bundle/
 *.swo
+.ash_history
+.cache/
+.local/
+.yarnrc
